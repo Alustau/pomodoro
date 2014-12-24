@@ -4,11 +4,11 @@ app.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/index', {
-        templateUrl: 'partials/timer.html',
+        templateUrl: 'modules/Timer/View/Timer.html',
         controller: 'TimerController'
       }).
       when('/settings', {
-        templateUrl: 'partials/settings.html',
+        templateUrl: 'modules/Setting/View/Settings.html',
         controller: 'SettingController'
       }).
       otherwise({
