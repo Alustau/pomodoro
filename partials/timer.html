@@ -1,0 +1,47 @@
+<div class="jumbotron col-lg-12" ng-controller="TimerController as t">
+    <div class="col-lg-6">
+        <h1 ng-class="timer" class="timer">{{t.teste}}</h1>
+        <p class="lead">
+        </p>
+        <p>
+            <a class="btn btn-lg btn-success" ng-if="true" ng-click="start(t.time)" href="#" role="button">Iniciar</a>
+            <a class="btn btn-lg btn-danger" href="#" role="button">Parar</a>
+        </p>
+    </div>
+    <div class="col-lg-6">
+        <h2>{{'#' + caso}}</h2>
+        <p class="lead">
+            Digite aqui o número do caso:
+        </p>
+        <p>
+            <input type="text" value="" class="col-lg-6" ng-model="caso"/>
+        </p>
+        <p>
+            <input type="text" value="#" ng-model="t.time"/>
+        </p>
+      </div>
+  </div>
+
+<!--      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>-->
