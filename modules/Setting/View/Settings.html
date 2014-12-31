@@ -1,3 +1,24 @@
-<div style="background-color: gray;" ng-controller="SettingController">
-    {{teste}}
+<div ng-controller="SettingController">
+    <form>
+        <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="long_break">Parada comprida</label>
+                    <input type="text" class="form-control" name="long_break" id="long_break" value="{{config.long_break}}">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="short_break">Parada curta</label>
+                    <input type="text" class="form-control" name="short_break" id="short_break" value="{{config.short_break}}">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="tempo">Tempo</label>
+                    <input type="text" class="form-control" name="tempo" id="tempo" value="{{config.tempo}}">
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 pull-right">
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+    </form>
+    <br>
 </div>

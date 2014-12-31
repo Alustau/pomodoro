@@ -8,11 +8,11 @@ var TimerController = BaseController.extend({
     },
 
     defineScope:function(){
-        this.Contador.setTime(6000);
-        console.log(this.Contador.getTime());return false;
-        this.$http.get('rest/procedimento/14').success( function ( data, status, headers, config ) {
-            console.log( data );
-        });
+//        this.Contador.setTime(6000);
+//        console.log(this.Contador.getTime());return false;
+//        this.$http.get('rest/procedimento/14').success( function ( data, status, headers, config ) {
+//            console.log( data );
+//        });
     }
 });
 

@@ -27,8 +27,8 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right" role="tablist">
-                    <li role="presentation"  class="active"><a href="#/timer">Timer</a></li>
-                    <li role="presentation"><a href="#/settings">Settings</a></li>
+                    <li role="presentation"  class="active"><a href="#/timer">Cronômetro</a></li>
+                    <li role="presentation"><a href="#/settings">Configurações</a></li>
                 </ul>
                 <h3 class="text-muted">Pomodoro</h3>
             </div>

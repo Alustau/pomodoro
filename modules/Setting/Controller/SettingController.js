@@ -9,9 +9,9 @@ var SettingController = BaseController.extend({
 
     defineScope:function() {
         var self = this;
-        this.configuracoes.getConfiguracoes(1).then(function(){
-            console.log(self.configuracoes.configuracoes);
-        })
+        this.configuracoes.getConfiguracoes(1).then(function(response) {
+            self.$scope.config = response.data[1];
+        });
     }
 });
 
