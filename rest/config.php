@@ -9,6 +9,6 @@ return [
     'db' => [
         'dsn'      => 'mysql:dbname=pomodoro;host=127.0.0.1',
         'username' => 'root',
-        'password' => 'alustau321'
+        'password' => ''
     ],
 ];
