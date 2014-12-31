@@ -12,14 +12,12 @@ app.factory("Configuracoes", function ($http) {
         });
     }
     
-    Configuracoes.prototype.setTime = function(time) {
-        this.time = time;
-        return this;
-    }
-    
-    Configuracoes.prototype.refreshCount = function(time) {
-        this.setTime(time / 1000);
-        return this;
+    Configuracoes.prototype.setConfiguracoes = function(data) {
+        var self = this;
+        console.log(data);
+        $http.post('rest/configuracoes', data).success(function (response) {
+            console.log(response);
+        });
     }
     
     return Configuracoes;

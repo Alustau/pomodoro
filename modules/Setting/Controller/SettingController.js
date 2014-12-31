@@ -12,6 +12,11 @@ var SettingController = BaseController.extend({
         this.configuracoes.getConfiguracoes(1).then(function(response) {
             self.$scope.config = response.data[1];
         });
+    },
+    
+    addSetting: function() {
+        var values = this.$scope.config;
+        this.configuracoes.setConfiguracoes(values);
     }
 });
 

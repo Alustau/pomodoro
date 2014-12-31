@@ -1,22 +1,27 @@
-<div ng-controller="SettingController">
-    <form>
+<div ng-controller="SettingController as sc">
+    <form name="addSettings" ng-submit="sc.addSetting()">
         <div class="row">
-                <div class="form-group col-md-4">
-                    <label for="long_break">Parada comprida</label>
-                    <input type="text" class="form-control" name="long_break" id="long_break" value="{{config.long_break}}">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="short_break">Parada curta</label>
-                    <input type="text" class="form-control" name="short_break" id="short_break" value="{{config.short_break}}">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="tempo">Tempo</label>
-                    <input type="text" class="form-control" name="tempo" id="tempo" value="{{config.tempo}}">
-                </div>
+            <div class="form-group col-md-4">
+                <label for="long_break">Parada comprida</label>
+                <input type="text" class="form-control" ng-model="config.long_break"
+                       id="long_break" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="short_break">Parada curta</label>
+                <input type="text" class="form-control" ng-model="config.short_break"
+                       id="short_break" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="tempo">Tempo</label>
+                <input type="text" class="form-control" ng-model="config.tempo"
+                       id="tempo"  required>
+            </div>
+            
+            <input type="hidden" ng-model="config.usuario_id">
         </div>
         <div class="row">
             <div class="col-md-2 pull-right">
-                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="submit" ng-disabled="addSettings.$invalid" class="btn btn-success">Enviar</button>
             </div>
         </div>
     </form>
