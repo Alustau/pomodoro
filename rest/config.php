@@ -7,7 +7,7 @@ return [
         'templates.path' => './templates',
     ],
     'db' => [
-        'dsn'      => 'mysql:dbname=sgp;host=127.0.0.1',
+        'dsn'      => 'mysql:dbname=pomodoro;host=127.0.0.1',
         'username' => 'root',
         'password' => 'alustau321'
     ],

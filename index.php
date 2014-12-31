@@ -10,14 +10,15 @@
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/jmbotron-narrow.css">
         <link rel="stylesheet" href="css/index.css">
-
+        
         <script src="libs/jquery/jquery-1.9.1.min.js"></script>
         <script src="libs/Class.js"></script>
-        <script src="js/angular.js"></script>
-        <script src="js/angular-route.js"></script>
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular/angular-route.js"></script>
         <script src="config/App.js"></script>
         <script src="libs/DA/BaseController.js"></script>
         <script src="modules/Timer/Model/Contador.js"></script>
+        <script src="modules/Setting/Model/Configuracoes.js"></script>
         <script src="modules/Timer/Controller/TimerController.js"></script>
         <script src="modules/Setting/Controller/SettingController.js"></script>
     </head>
