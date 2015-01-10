@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="pomodoro" default="build">
     
-    <target name="bla">
-        <exec command="rm -Rf /var/www/html/${phing.project.name}/*" />
-        <exec command="cp -R '/var/lib/jenkins/jobs/pomodoro/workspace' /var/www/html/${phing.project.name}" />
+    <target name="bla.properties">
+        <property file="${project.basedir}/config/phing/bla.properties" />
     </target>
+    
+    <target name="bla" depends="bla.properties">
+        <exec command="rm -Rf ${application.path}/*" />
+        <exec command="cp -R '${project.basedir}/' ${application.path}" />
+    </target>    
 </project>
