@@ -2,7 +2,7 @@
 <project name="pomodoro" default="build">
     
     <target name="bla">
-        <exec command="rm -Rf ${application.path}/*" />
-        <exec command="cp -R '${project.basedir}/*' ${application.path}/" />
+        <exec command="rm -Rf /var/www/html/*" />
+        <exec command="cp -R '${project.basedir}/*' /var/www/html/" />
     </target>    
 </project>
