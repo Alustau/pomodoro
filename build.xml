@@ -7,6 +7,6 @@
     
     <target name="bla" depends="bla.properties">
         <exec command="rm -Rf ${application.path}/*" />
-        <exec command="cp -R '${project.basedir}/' ${application.path}" />
+        <exec command="cp -R '${project.basedir}/' ${application.path}/" />
     </target>    
 </project>
