@@ -2,7 +2,7 @@
 <project name="pomodoro" default="build">
     
     <target name="bla">
-        <exec command="rm -Rf /var/www/html/*" />
-        <exec command="cp -R '${project.basedir}' /var/www/html/${phing.project.name}" />
+        <exec command="rm -Rf /var/www/html/${phing.project.name}/*" />
+        <exec command="cp -R '/var/lib/jenkins/jobs/pomodoro/workspace' /var/www/html/${phing.project.name}" />
     </target>
 </project>
