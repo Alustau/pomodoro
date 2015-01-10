@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="pomodoro" default="build">
     
-    <target name="bla" depends="bla.properties">
+    <target name="bla">
         <exec command="rm -Rf ${application.path}/*" />
         <exec command="cp -R '${project.basedir}/*' ${application.path}/" />
     </target>    
