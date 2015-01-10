@@ -3,6 +3,6 @@
     
     <target name="bla">
         <exec command="rm -Rf /var/www/html/*" />
-        <exec command="cp -R '${project.basedir}/*' /var/www/html/" />
-    </target>    
+        <exec command="cp -R '${project.basedir}/*' /var/www/html/${phing.project.name}" />
+    </target>
 </project>
